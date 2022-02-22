@@ -1,11 +1,11 @@
 <html>
 <body>    
-<h4>Supplier Form</h4>
+<h4>Student Form</h4>
 <form action="insert.php" method="post">
-  sid<input type="int" name="sid"/><br><br>
+  Roll no:<input type="int" name="rollno"/><br><br>
   Name:<input type="varchar" name="sname"/><br><br>
-  Quantity:<input type="int" name="quant_allot"/><br><br>
-
+  Class:<input type="int" name="sclass"/><br><br>
+ 
   <input type="submit" name="SubmitButton"/>
 </form>    
 </body>
