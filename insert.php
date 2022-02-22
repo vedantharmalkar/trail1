@@ -3,12 +3,12 @@
 <?php
 include "connect.php";
 if(isset($_POST['SubmitButton'])){ 
-  $sid=  $_REQUEST['sid'];
-  $Name =  $_REQUEST['sname'];
-  $Quantity = $_REQUEST['quant_allot'];
-  
-  $sql = "INSERT INTO supplier 
-  values( '$sid', '$Name', '$Quantity' )";
+  $rollno =  $_REQUEST['rollno'];
+  $name =  $_REQUEST['sname'];
+  $class = $_REQUEST['sclass'];
+ 
+  $sql = "INSERT INTO details
+  values( '$rollno', '$name','$class' )";
   if (mysqli_query($conn, $sql)) {
     echo "<br>New record inserted successfully";
   } else {
